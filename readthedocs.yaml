@@ -1,0 +1,22 @@
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+# Required
+version: 2
+
+# Build environment
+build:
+  os: ubuntu-24.04
+  tools:
+    python: "3.13"
+
+# Build the documentation with MkDocs (RTD-native builder, first-class support).
+# Prose/how-to documentation only: no Python API to autodoc, so MkDocs is the
+# lightest and simplest fit for this project.
+mkdocs:
+  configuration: mkdocs.yml
+
+# Install MkDocs (and any extra plugins you add) from the docs requirements file
+python:
+  install:
+    - requirements: docs/requirements.txt
