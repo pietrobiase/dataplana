@@ -1,0 +1,33 @@
+# Normalizzazione fine riga: testo sempre LF in repo, LF nativo su macOS/Linux,
+# SFM (LF) anche su Windows per coerenza tra i file del progetto.
+
+* text=auto
+
+*.md          text eol=lf
+*.html        text eol=lf
+*.css         text eol=lf
+*.js          text eol=lf
+*.json        text eol=lf
+*.geojson     text eol=lf
+*.csv         text eol=lf
+*.xml         text eol=lf
+*.log         text eol=lf
+*.yaml        text eol=lf
+*.yml         text eol=lf
+*.txt         text eol=lf
+*.py          text eol=lf
+*.bat         text eol=crlf
+*.ps1         text eol=lf
+*.htaccess    text eol=lf
+*.htpasswd    text eol=lf
+*.woff        binary
+*.woff2       binary
+*.png         binary
+*.jpg         binary
+*.jpeg        binary
+*.gif         binary
+*.svg         text eol=lf
+*.ico         binary
+*.eot         binary
+*.ttf         binary
+*.xlsx        binary

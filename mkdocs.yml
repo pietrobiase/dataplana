@@ -2,6 +2,8 @@ site_name: DataPlana
 site_description: Documentazione del portale open data statico DataPlana
 site_author: Pietro Biase
 site_url: https://dataplana.readthedocs.io/
+repo_url: https://github.com/pietrobiase/dataplana
+edit_uri: blob/main/docs/
 
 theme:
   name: readthedocs
@@ -9,14 +11,22 @@ theme:
 
 nav:
   - Home: index.md
-  - Struttura: struttura.md
-  - Amministrazione: amministrazione.md
+  - Installazione: installazione.md
+  - Avvio rapido: avvio-rapido.md
+  - Configurazione: configurazione.md
+  - Catalogo e amministrazione: amministrazione.md
+  - Credenziali dell'area admin: credenziali.md
+  - Privacy policy: privacy.md
+  - Struttura del progetto: struttura.md
   - Deploy: deploy.md
+  - Contribuire: contribuire.md
+  - Licenza: licenza.md
 
 markdown_extensions:
   - toc:
       permalink: true
   - tables
   - fenced_code
+  - admonition
 
 exclude_docs: requirements.txt
