@@ -28,7 +28,6 @@ python server.py           # poi apri http://localhost:8000
 Admin locale: <http://localhost:8000/admin.html>. Credenziali di default: utente `admin`,
 password `admin` — **da cambiare subito** (vedi la pagina "Credenziali dell'area admin" nella
 [documentazione](https://dataplana.readthedocs.io/) o `docs/credenziali.md`).
-Il memo delle credenziali vive nel file locale `credenziali.txt`.
 
 Per usare anche l'editor di configurazione in locale: `python -m pip install pyyaml`.
 

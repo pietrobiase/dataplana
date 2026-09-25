@@ -63,9 +63,9 @@ Crea un hash SHA-512-crypt `$6$` dalla password desiderata, con uno di questi me
 
 **Metodo A — strumento online (semplice, attenzione ai dati):**
 
-1. Apri un generatore di hash `.htpasswd` online (ad esempio
-   <https://hostingfilm.com/htpasswd-generator/> o
-   <https://www.askapache.com/online-tools/htpasswd-generator/>).
+1. Apri un generatore di hash SHA-512-crypt online (ad esempio
+   <https://www.stat.ubc.ca/sha512-password-hash-generator> o
+   <https://secure.math.ubc.ca/php/SHA512/>).
 2. Scegli l'algoritmo **SHA-512 (`$6$`)**.
 3. Inserisci l'**username** e la **password** che hai scelto e genera.
 4. Copia la riga `utente:$6$...` restituita.
@@ -140,8 +140,8 @@ un utente, lasciando le altre). Consigli:
 
 !!! success "Dopo la verifica"
 
-    Ora il pannello è protetto e **tu conosci** le credenziali. Annota la nuova coppia nel
-    memo locale `credenziali.txt` (file da NON pubblicare) oppure in un gestore di password.
+    Ora il pannello è protetto e **tu conosci** le credenziali. Conserva la nuova coppia in
+    un gestore di password.
 
 ## Creare più utenti
 
@@ -165,8 +165,8 @@ Per concedere l'accesso ad altre persone:
 - **Cambia subito** le credenziali di default `admin`/`admin` prima di pubblicare il portale.
 - Non usare password deboli o già usate altrove; preferisci password lunghe generate da un
   gestore.
-- Il file `.htpasswd` **non va mai** condiviso via web: il `.htaccess` incluso lo blocca già,
-  e non va caricato `credenziali.txt` — vedi [Deploy](deploy.md#cosa-non-caricare).
+- Il file `.htpasswd` **non va mai** condiviso via web: il `.htaccess` incluso lo blocca già —
+  vedi [Deploy](deploy.md#cosa-non-caricare).
 - Se sospetti che le credenziali siano trapelate, cambiale subito.
 
 ## Riferimenti

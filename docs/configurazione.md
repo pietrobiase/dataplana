@@ -22,8 +22,8 @@ formato si riflette soltanto nell'elenco di opzioni dell'admin.
 ## 1. Modifica diretta di `config/conf.yaml`
 
 Apri il file con un editor di testo. Nomi e tipi delle chiavi sono fissi; l'ordine è libero.
-Le chiavi riconosciute sono esattamente: `title`, `subtitle`, `baseColor`, `pageSize`,
-`seo`, `footer`, `links`, `categories`, `fontAwesome`, `formats`, `credits`.
+Le chiavi riconosciute sono esattamente: `title`, `subtitle`, `basedir`, `baseColor`,
+`pageSize`, `seo`, `footer`, `links`, `categories`, `fontAwesome`, `formats`, `credits`.
 
 Un esempio commentato e uguale a quello fornito è già presente nel file. Di seguito la
 descrizione puntuale di ogni parametro.
@@ -42,6 +42,21 @@ Sottotitolo del portale, mostrato sotto il brand nell'header.
 
 ```yaml
 subtitle: Open data, made light.
+```
+
+### `basedir` — *stringa (percorso cartella, es. `/nomecartella`)*
+
+Cartella del portale sul server. Se il sito è pubblicato in una **sottocartella**
+(es. `https://esempio.it/nomecartella/`), indicare `/nomecartella`: il pulsante **Home**, il
+logo e il menu puntano alla home corretta invece che alla root del dominio. Vuoto oppure
+commentato = il portale sta nella root (valore predefinito).
+
+```yaml
+basedir: ''
+```
+
+```yaml
+basedir: /nomecartella
 ```
 
 ### `baseColor` — *hex `#rrggbb` o `rrggbb`*
@@ -207,6 +222,7 @@ grafico. La mappa tra i campi del modulo e le chiavi di `conf.yaml`:
 |----------------|--------------------|
 | Campo "Titolo" | `title` |
 | Campo "Sottotitolo" | `subtitle` |
+| Campo "Cartella del portale (BASEDIR)" | `basedir` |
 | Campo "Colore base" (+ selettore colore) | `baseColor` |
 | Campo "Righe per anteprima" | `pageSize` |
 | Riquadro SEO → Titolo / Descrizione / Keywords | `seo` → `title`, `description`, `keywords` |

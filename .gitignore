@@ -7,3 +7,4 @@
 # Ignora un'intera cartella e tutto il suo contenuto
 __pycache__/
 src/
+site/

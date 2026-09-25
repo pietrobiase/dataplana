@@ -30,7 +30,7 @@ deploy/.htpasswd   → nella posizione indicata dentro .htaccess
 
 ## Cosa NON caricare
 
-**Non caricare mai**: `server.py`, `lancio.bat`, `credenziali.txt` e la cartella `local/`.
+**Non caricare mai**: `server.py`, `lancio.bat` e la cartella `local/`.
 `server.py` è solo per lo sviluppo locale; il deploy è 100% statico.
 
 ## Configurare `.htaccess` e `.htpasswd` (hosting Apache)
@@ -42,7 +42,7 @@ Il progetto fornisce due file già pronti in `src/deploy/`:
   - header di sicurezza (`X-Frame-Options`, `X-Content-Type-Options`,
     `Referrer-Policy`);
   - **Basic Auth sulla sola `admin.html`**;
-  - blocco dell'accesso via web a `.htaccess`, `.htpasswd`, file `.log` e `credenziali.txt`.
+  - blocco dell'accesso via web a `.htaccess`, `.htpasswd` e file `.log`.
 
   Procedura:
   1. copia `deploy/.htaccess` nella root del sito e **rinominalo** in `.htaccess`;
